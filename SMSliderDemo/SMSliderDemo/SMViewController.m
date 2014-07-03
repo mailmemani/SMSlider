@@ -44,16 +44,18 @@
       [UIImage imageNamed:@"notifications-bg.png"];
   //    self.slider.shouldEnableFirstTrackerValueAsMinimum = NO;
   //    self.slider.displayInDecimalFormat = YES;
-  self.slider.sliderOff = YES;
-  self.slider.enableSliderOff = NO;
-  self.slider.enableSliderOverLimit = YES;
+  // self.slider.sliderOff = YES;
+  // self.slider.enableSliderOff = NO;
+  // self.slider.enableSliderOverLimit = YES;
   //    self.slider.shouldEnableFirstTrackerValueAsMinimum = YES;
   //    self.slider.sliderRangeDifference = 50;
-  [self.slider updateSliderWithType:kSliderWithDoubleColorAndTracker
-             FirstMinimumTrackValue:100.0f
-            SecondMinimumTrackValue:50.0f
+  self.slider.minimumValue = 0.0f;
+  self.slider.maximumValue = 500.0f;
+  [self.slider updateSliderWithType:kSliderWithTrackerAndRightView
+             FirstMinimumTrackValue:150.0f
+            SecondMinimumTrackValue:0.0f
                FirstTrackerPosition:150.0f
-              SecondTrackerPosition:0.0f];
+              SecondTrackerPosition:200.0f];
 }
 
 - (void)didReceiveMemoryWarning {

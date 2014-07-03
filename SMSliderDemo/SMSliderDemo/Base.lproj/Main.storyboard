@@ -17,13 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9D5-Hz-ypw" customClass="SMSlider">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D5-Hz-ypw" customClass="SMSlider">
                                 <rect key="frame" x="5" y="218" width="310" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Iat-fZ-dwO"/>
+                                    <constraint firstAttribute="width" constant="310" id="s1i-pw-mJz"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.077229964997667877" green="0.8980392157" blue="0.56520790233746321" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.88282587280681946" green="0.8980392157" blue="0.49996377095519867" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="9D5-Hz-ypw" secondAttribute="centerY" constant="16" id="NSz-DQ-okq"/>
+                            <constraint firstAttribute="centerX" secondItem="9D5-Hz-ypw" secondAttribute="centerX" id="ceH-uP-q7q"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="slider" destination="9D5-Hz-ypw" id="Eva-kP-x5e"/>
